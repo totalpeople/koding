@@ -1,0 +1,59 @@
+# Setting Up Wordpress on koding.com
+
+# Install MySQL
+kpm install mysql
+
+# Install Wordpress
+kpm install wordpress
+
+# Add the following to wp-config
+echo "define('FS_METHOD', 'direct');" >> ~/Web/wordpress/config.php
+
+# Download and extract the required plugins
+cd Web/wordpress/wp-content/plugins
+
+# Contact Form 7
+wget https://downloads.wordpress.org/plugin/contact-form-7.4.1.1.zip
+unzip contact-form-7.4.1.1.zip
+rm contact-form-7.4.1.1.zip
+
+# Disqus Comment System
+wget https://downloads.wordpress.org/plugin/disqus-comment-system.zip
+unzip disqus-comment-system.zip
+rm disqus-comment-system.zip
+
+# FakerPress
+wget https://downloads.wordpress.org/plugin/fakerpress.zip
+unzip fakerpress.zip
+rm fakerpress.zip
+
+# Google XML Sitemaps
+wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.8.zip
+unzip google-sitemap-generator.4.0.8.zip
+rm google-sitemap-generator.4.0.8.zip
+
+# Jetpack
+wget https://downloads.wordpress.org/plugin/jetpack.3.4.2.zip
+unzip jetpack.3.4.2.zip
+rm jetpack.3.4.2.zip
+
+# MailChimp
+wget https://downloads.wordpress.org/plugin/mailchimp-for-wp.2.2.9.zip
+unzip mailchimp-for-wp.2.2.9.zip
+rm mailchimp-for-wp.2.2.9.zip
+
+# Wordpress SEO
+wget https://downloads.wordpress.org/plugin/wordpress-seo.2.0.1.zip
+unzip wordpress-seo.2.0.1.zip
+rm wordpress-seo.2.0.1.zip
+
+# WP Super Cache
+wget https://downloads.wordpress.org/plugin/wp-super-cache.1.4.4.zip
+unzip wp-super-cache.1.4.4.zip
+rm wp-super-cache.1.4.4.zip
+
+# Download and extract the required themes
+cd ../themes
+
+#wget http://colorlib.com/out/download-sparkling
+

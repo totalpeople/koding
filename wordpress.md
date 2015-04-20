@@ -10,7 +10,4 @@ Add the following to wp-config
 /** Stop WordPress from asking for FTP credentials */
 define('FS_METHOD', 'direct');
 
-### Install FTP
-kpm install ftp
-
 ### Installing
