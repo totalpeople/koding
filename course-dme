@@ -10,6 +10,15 @@ kpm install wordpress
 # Add the following to wp-config
 echo "define('FS_METHOD', 'direct');" >> ~/Web/wordpress/wp-config.php
 
+# Create a .htaccess file
+touch ~/Web/wordpress/.htaccess
+sudo chown -R www-data:www-data ~/Web/wordpress/.htaccess
+sudo chmod -R 755 ~/Web/wordpress/.htaccess
+
+# Give the web server permissions to write to the wp-content directory
+sudo chown -R www-data:www-data ~/Web/wordpress/wp-content
+sudo chmod -R 755 ~/Web/wordpress/wp-content
+
 # Download and extract the required plugins
 pluginDir=~/Web/wordpress/wp-content/plugins
 
